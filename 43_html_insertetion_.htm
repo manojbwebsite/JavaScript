@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenar"></div>
+    <div id="frist"> frist id</div>
+</body>
+<script>
+    let a= document.getElementsByTagName("div")[0]
+
+    a.innerHTML= a.innerHTML+ "<h1> good moring idia</h1>" // inset html
+
+    let div= document.createElement("div")
+    div.innerHTML= "<h1> i am manoj</h1>" //inset a new element
+    a.appendChild(div);  // after div cret this html
+
+    a.prepend(div); // befor dive cret this html
+
+     a.before(div) // create new div before div class= contenar
+     a.after(div) // create new div after div class= contenar
+     a.replaceWith("div") // a replace with span
+</script>
+</html>

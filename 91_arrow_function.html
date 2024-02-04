@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // writing function type
+    const sayhellow = (name, greting) => console.log(greting + " " + name);
+    sayhellow("manoj", "you are good boy");
+
+
+    const x = {
+      name: "manoj",
+      age: 24,
+      pxpriance: " 5 years",
+      show: function () {
+        // let that =this  // use settime inside code acces use this
+        setTimeout(() => {
+      console.log(` there name is ${this.name}, age is ${this.age} job exprience ${this.pxpriance}`); // that is wrok this is not working settimeout function
+        },2000);
+        // add function object
+          // this is object of fumction
+      },
+    };
+    x.show()
+  </script>
+</html>

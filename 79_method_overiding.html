@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    class employee{
+
+        login(){
+            console.log("employe is login")
+        }
+        logout(){
+            console.log(" employe has loged out")
+        }
+
+        employeelive(leaves){
+            console.log(`employe has requested ${leaves} auto update`)
+        }
+    }
+
+    class progrmer extends employee{
+        requvestcopy(x){
+            console.log(`employe has requsted ${x} copy`)
+        }
+        
+        employeelive(leaves){
+            super.employeelive(4) // employee class method voerride super key word
+
+            console.log("extra leces grented")
+        }
+    }
+
+    let e= new progrmer()
+    e.login()
+    e.employeelive()
+</script>
+</html>

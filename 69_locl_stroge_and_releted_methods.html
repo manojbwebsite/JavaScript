@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let key =prompt("enter value")
+    let value=prompt(" enter value")
+    localStorage.setItem(key,value)
+console.log(`The value at${key} is${localStorage.getItem(key)}`)
+
+// There are the method provided by localStorage
+
+// setItem(key, value) – Store key/value pair
+// getItem(key) – get the value by key
+// removeItem(key) – remove the key with its value
+// clear() – delete everything
+// key(index) – get the key on a given position
+// length – the number of stored items
+ 
+</script>
+</html>

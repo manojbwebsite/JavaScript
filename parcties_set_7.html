@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    nav{
+        display: flex;
+    }
+    nav li{
+        list-style: none;
+        padding: 0 23px;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<body>
+    <nav>
+        <li>
+            home
+        </li>
+        <li>about</li>
+        <li>contacts</li>
+        <li>name</li>
+    </nav>
+</body>
+<script>
+    document.getElementsByTagName("nav")[0].firstElementChild.style.color="red"
+    document.getElementsByTagName("nav")[0].firstElementChild.style.color="cyan"
+    document.getElementsByTagName("nav")[0].lastElementChild.style.color="blue"
+    document.getElementsByTagName("nav")[0].firstElementChild.style.background="red"
+
+
+    Array.from(document.getElementsByTagName("li")).forEach((element) => {
+        element.style.background="red"
+        // use Array .from method
+        
+    });
+</script>
+</html>

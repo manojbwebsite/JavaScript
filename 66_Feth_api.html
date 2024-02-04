@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch api</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let p = fetch(" https://parallelum.com.br/fipe/api/v1/carros/marcas")
+    p.then((value) => {
+        console.log(value.status)
+        console.log(value.ok) // check wrojk url (respons)
+           return value.json  // use 2 .then because jison value show date object from json
+   }).then((value2)=>{
+       console.log(value2)
+   })
+
+    
+</script>
+</html>

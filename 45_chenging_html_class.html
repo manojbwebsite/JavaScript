@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .red{
+        background-color: red;
+        color: white;
+    }
+
+    .yellow{
+        background-color: yellow;
+        color: black;
+    }
+</style>
+<body>
+    <div id="frist" class="red">
+        <span> i am good boy</span>
+    </div>
+</body>
+<script>
+    let frist= document.getElementById("frist")
+
+    frist.className="yellow" // add clss use js
+    console.log(frist.classList) // shiw the all class list
+    // console.log(frist.remove("yellow"))  // remove  added  class
+    console.log(frist.classList.add("red"))
+ frist.classList.toggle("yellow")
+ frist.classList.toggle("yellow") // class is add to add not add to add class
+   console.log(frist.classList.contains("yellow")) // clss is exsist true oR false
+</script>
+</html>

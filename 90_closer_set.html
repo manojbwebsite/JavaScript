@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // coluser is a combination of function and the lexical evnvorment within which that function was declered
+
+    const outerfun = (a) => {
+        let b =10;
+        const inerfun = () =>{  // acces outer function parameter
+            let sum = a+b;
+            console.log(`the sum of two number is ${sum}`)
+        }
+       return inerfun; // return inner function
+    }
+   let inner = outerfun(5)   // store the function varibale call it closer example outer function return iner function
+
+   console.dir(inner)
+    
+   inner()
+   
+</script>
+</html>

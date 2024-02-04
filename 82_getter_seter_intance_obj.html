@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    class animal{
+        constructor(name){
+            this._name=name
+        }
+        flay(){
+            alert(" i am flying in sky")
+        }
+
+        get name(){
+            return this._name
+        }
+        set name(newName){
+            this._name=newName    // set a new name
+
+        }
+
+    }
+
+    let a= new animal('harray')
+    a.flay()
+    console.log(a.name)
+    a.name= "jack"
+    console.log(a.name)
+
+    console.log(a instanceof animal)  // chek the class instance  true or false
+
+</script>
+</html>

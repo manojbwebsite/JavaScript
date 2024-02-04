@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    try{
+        let age= prompt("Enter tour age")
+        age= Number.parseInt(age)
+        if(age>150)
+        {
+            throw new ReferenceError("this propbabilty is not true")
+        }
+
+    }catch(error){
+        console.log(error.name) // show the nme of the error This ReferenceError
+        console.log(error.message) // show this "this propbabilty is not true"
+        // console.log(error.stack) //  at 61_The_eror_object_custom_Eroor.html:55:19
+    }
+
+    console.log("this script is running")
+</script>
+</html>

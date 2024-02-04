@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // cookies =Cookies are small strings of data stored directly in the browser
+
+    console.log(document.cookie)
+    document.cookie = "name = manoj"
+    console.log (document.cookie)
+
+    let key = prompt("enter key")
+    let value= prompt("enter a value")
+    
+    document.cookie= `${encodeURIComponent(key)}= ${encodeURIComponent(value)}`
+    document.cookie= `${decodeURIComponent(key)}= ${decodeURIComponent(value)}`// as it isprint cookie
+    console.log(document.cookie)
+</script>
+</html>

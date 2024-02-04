@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inner html</title>
+</head>
+<body>
+    <span id="frist" hidden> Bhey i am span</span>
+    
+</body>
+
+<script>
+//    console.log( document.body.fristchild.nodeName);
+   console.log( document.body.firstElementChild.nodeName);
+
+   let a=(document.getElementById("frist"))
+   console .log(a.innerHTML); // give the html onley inside id 
+ 
+   let b=(document.getElementById("frist"))
+   console .log(b.outerHTML); //give the html with tag and id name
+
+   a.innerHTML= " <l> he i am manoj</i>"  // inser iner html
+   b.outerHTML= "<div hidden> i am good boy </div>" // set outer html
+    
+
+    console .log(document.body.firstChild.data) // give the data
+
+
+    console .log(document.body.textContent) // give all data onle text format
+
+   console.log( $0.hidden=false)  // show all hide element
+</script>
+</html>

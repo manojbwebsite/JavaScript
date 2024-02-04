@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    function lodscript(src, callback) {
+      let script = document.createElement("script");
+      script.src = src;
+      script.onload = function () {
+        console.log("Lodded script with src" + src);
+        callback(null, src);
+      };
+      script.onerror = function () {
+        console.log(" Eroor loding script with src" + src);
+        callback(new error("scrip get some eroor"));
+      };
+      document.body.appendChild(script);
+    }
+
+    function hellow(error, src) {
+      // call back with src arragument
+      if(error) {
+        console.log(error);
+        return
+      }
+      
+      alert("hellow worlod" + src);
+    }
+    function good(error,src) {
+      // call back with arrgument
+      
+      alert("good moring india" + src);
+    }
+
+    lodscript(
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js",hellow );
+   
+      
+  </script>
+</html>

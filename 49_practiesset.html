@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .blub{
+        height: 350px;
+        width: 350px;
+        background-color:yellow ;
+    }
+
+    .blubcontenar{
+        height: 350px;
+        width: 350px;
+       
+    }
+</style>
+<body>
+    hellow world
+
+    <button onclick="alert('good moring india')">btn1</button>
+    <button onclick="alert('good moring solapur')">btn2</button>
+    <button onclick="alert('good moring pune')">btn3</button>
+
+    <h1>Bookmarks</h1>
+     <button id="google"> google</button>
+    <a href=" https://fb.com"> <button> fecbook</button></a>
+    <a href=" https://twiter.com"> <button> twiter</button></a>
+
+    <div  id="blub" class=" blubcontenar blub">
+
+    </div>
+</body>
+<script>
+    document.getElementById("google").addEventListener("click",function(){
+        window.location = " https://www.google.com";
+        win.focus();
+
+    });
+
+    setInterval(async function(){
+        document.querySelector("#blub").classList.toggle("blub")
+
+    },500);
+</script>
+</html>

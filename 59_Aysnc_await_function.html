@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // async await function
+
+    async function manoj() {
+      let delwether = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve("27 deg");
+        }, 2000);
+      });
+
+      let banglorwether = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve("29 deg");
+        }, 5000);
+      });
+
+    //   delwether.then(alert); // show wether
+    //   banglorwether.then(alert);
+  console.log("fetching deli wether plies wait")
+    let deliw= await delwether
+    console.log("deli wether has been ftechh" +deliw)
+
+    console.log("fetching banglor wether plies wait")
+    let bang= await banglorwether
+    console.log("fetch banglor wether"+bang)
+    return [deliw, bang]
+    }
+
+    const chary =async ()=>{
+      console.log(" he iam cheray and iam wating") // new function
+
+    }
+
+    const min = async ()=>{
+      console.log("welcome to wether control room");  //calling two function create 3rd function and calling
+    let a= await manoj();
+     let b= await chary();
+     
+    }
+     min();
+   
+  </script>
+</html>

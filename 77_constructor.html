@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // The constructor() method is called automatically by new, so we can initialize the object there.
+
+  
+//     class ralwayfrom{
+//         constructor(name,trinno){
+//             console.log("constractor called")
+//                 this.name=name
+//                 this.trinno=trinno
+            
+            
+//         }
+
+// submit(){
+//     alert( ` ${this.name} from is sumbmited ${this.trinno}`)
+// }
+
+// cansel(){
+
+//     alert(`${this.name} this from is cansel${this.trinno}`)
+// }
+
+
+// }
+
+// let ramfrom = new ralwayfrom("manoj", "123") // pass value to the constrocutor
+// let manojfrom= new ralwayfrom("manoj","345")
+
+// manojfrom.cansel()
+// ramfrom.submit()
+// manojfrom.submit()
+
+class ralwayfrom{
+        constructor(name,trinno,address){
+            console.log("constractor called")
+                this.name=name
+                this.trinno=trinno
+                this.address=address
+            
+            
+        }
+
+submit(){
+    alert( ` ${this.name} from is sumbmited ${this.trinno}`)
+}
+
+previw(){
+    alert( ` ${this.name} from is sumbmited  for this trin no ${this.trinno} and address is ${this.address}`)
+}
+cansel(){
+
+    alert(`${this.name} this from is cansel${this.trinno}`)
+    this.trinno=0  // trin cansel trino=0
+}
+
+
+}
+
+let manojfrom= new ralwayfrom("mnoj","12344","at-post ghoti tal madha")
+manojfrom.previw()
+manojfrom.cansel()
+
+</script>
+</html>

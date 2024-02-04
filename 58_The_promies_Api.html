@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    There are 6 static methods of Promise class:
+
+    Promise.all(promises) – Waits for all promises to resolve and returns the array of their results. if any one fails, it becomes the error and all other results are ignored.
+    Promise.allSettled(promises) – Waits for all the promises to settle and returns their results as an array of objects with status and value.
+    Promise.race(promises) – Waits for the first promise to settle and its result/error becomes the outcome.
+    Promise.any(promises) – Waits for the first promise to fulfill (& not rejected), and its result becomes the outcome. Throws AggregateError if all the promises are rejected.
+    Promise.resolve(value) – Makes a resolved promise with the given value.
+    Promise.reject(error) – Makes a rejected promise with the given error.
+     
+</body>
+<script>
+
+let p1= new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("value 1")
+    },6000);
+})
+
+let p2= new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("value 2")
+
+        reject(new Error("eroor"));
+    },2000);
+})
+
+let p3= new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("value3 ")
+    },3000);
+})
+
+// // p1.then((value)=>{
+// //    console.log(value)
+// })
+
+// promise API
+//     1>. ALL method
+// let promise_all= Promise.all([p1,p2,p3])  // print all promies one time Array format
+// promise_all.then((value)=>{
+//   console.log(value)     
+// })
+
+//  2>.allSettled method
+
+// promise_all= Promise.allSettled([p1,p2,p3]) // print promies with Eroor all promies
+// promise_all.then((value)=>{
+//   console.log(value)    
+// }) 
+// 3>.race method
+// promise_all= Promise.race([p1,p2,p3]) // print frist time Resovle promies
+// promise_all.then((value)=>{
+//   console.log(value)  
+// })  
+
+//  4>.any method
+// promise_all= Promise.any([p1,p2,p3]) //  print frist resolve promies with Eroor
+// promise_all.then((value)=>{
+//   console.log(value)  
+// })  
+
+// 
+promise_all= Promise.resolve(6) //print 6
+promise_all= Promise.reject(new Error("this is eror")) // show the error
+promise_all.then((value)=>{
+console.log(value)  
+})
+</script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    class ralwayfrom{
+
+        submit(){
+            alert( this.name+" from is subnmited for trian no:"+this.trinno)
+        }
+
+        cansel(){
+
+            alert(this.name+" thfrom is cansel:",this.trinno)
+        }
+
+        fillfrom(givename,trinno){
+            this.name=givename
+            this.trinno=trinno
+
+        }
+    }
+
+    let ramfrom = new ralwayfrom()
+    ramfrom.fillfrom("ram",123)
+
+    let manojfrom= new ralwayfrom()
+    manojfrom.fillfrom("manoj",345)
+
+    manojfrom.cansel()
+    ramfrom.submit()
+    manojfrom.submit()
+    
+
+</script>
+</html>

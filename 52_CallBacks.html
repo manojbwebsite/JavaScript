@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+// Any function that is passed as an arrgument is called as callback from function
+// callback is functon and thats is to be exucated after another function has finsish exucuting
+
+const perone=(friend , callback)=>{  // friend is parameter of function 
+    // callback is second number function passing 1=frist function
+     console.log(` he i am manoj ${friend} his may friend`);
+     callback(); // call back second function
+}
+const perone2=(friend)=>{
+    console.log(" this call back function wrok") 
+
+}
+
+//pss function to function as argument is call as function call back
+perone("ram",perone2); //function callback with passing arrgument ram is  argument
+ //function callback 
+</script>
+</html>
